@@ -1,12 +1,14 @@
 ###############################################################################
-## LabelFCSChannels version 3.0.1-Shiny
-## September 9, 2015
-## This tool allows you to label channels (parameters) in an FCS list mode 
+## LabelFCSChannels version 3.0.2-Shiny
+## September 9, 2015 (version 3.0.1)
+## August 22, 2018 (version 3.0.2 to add compatibility with new flowCore)
+##
+## This tool allows you to label channels (parameters) in an FCS list mode
 ## data file based on externally supplied labels.
 ###############################################################################
 
 ###############################################################################
-## Copyright (c) 2015 Josef Spidlen, Ph.D.
+## Copyright (c) 2015-2018 Josef Spidlen, Ph.D.
 ##
 ## License
 ## The software is distributed under the terms of the 
@@ -119,6 +121,8 @@ labelFlowFrame <- function(inputFcs, labels) {
             newLabel <- as.character(labels[which(labels[,'Parameter'] == parName), 'Label'])
             if (((length(newLabel) == 0) && (typeof(newLabel) == "character")) || (newLabel == "")) newLabel <- newName
             inputFcs@description[[kwParLabel]] <- as.character(newLabel)
+            names(newLabel) <- newName
+            markernames(inputFcs) <- newLabel
         }
         
     }

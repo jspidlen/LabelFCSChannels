@@ -1,6 +1,4 @@
-# Label FCS Channels Version 3.0.1
-
-**Compatibility note** Version 3.0.1 of this tool is not compatible with the flowCore 1.46.0 and newer package. This will be resolved soon in a version 3.0.2. Please use flowCore 1.44.2 or older.
+# Label FCS Channels Version 3.0.2
 
 The *Label FCS Channels* tool allows you to label channels (parameters) in an FCS 2.0, FCS 3.0 or FCS 3.1 list mode data file. Labelling means adding or rewriting the values of parameter names, i.e., values of the $PnS and $PnN FCS keywords ([see FCS format](http://www.ncbi.nlm.nih.gov/pubmed/19937951)) based on externally supplied labels and names. Rewriting $PnN keyword values is a new functionality that has been added in version 3.0 of this tool. Labels and names are provided in text file templates (see below). This tool is intended to be used post-acquisition to standardize the FCS channel description of IMPC acquired flow cytometry data, but can be applied on other FCS data files as well.
 
@@ -15,7 +13,8 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-This tools requires *R 3.2.0* and the *flowCore* library, version 1.34.0. Other versions of R and flowCore may also work but have not been tested. In addition, the web-based version of the tool requires the *shiny* library (tested with version 0.12.1), and the non-web-based version of the tool requires the *svDialogs* library (tested with version 0.9-57) if used in an interactive mode (see Usage below).
+This tools requires *R 3.2.0* and the *flowCore* library, version 1.34.0. Other versions of R and flowCore may also work but have not been tested. In addition, the web-based version of the tool requires the *shiny* library (tested with version 0.12.1), and the non-web-based version of the tool requires the *svDialogs* library (tested with version 0.9-57) if used in an interactive mode (see Usage below). Version 3.0.1 of this tool is not compatible with the flowCore 1.46.0 and newer package; this has been resolved in a version 3.0.2.
+
 
 ### Installation
 
@@ -112,9 +111,9 @@ Even if you use all 3 columns, the values and/or new names for particular parame
 ## Troubleshooting
 
 ### Compatibility Notes
-Version 3.0.1 of this tool is not compatible with the flowCore 1.46.0 and newer package. This will be resolved soon in a version 3.0.2. Please use flowCore 1.44.2 or older.
-
 The Label FCS Channels tool is compatible with Linux, (Mac) OS X and Windows. The web-based version requires the presence of an an external ZIP tool on your command path. A compatible zip tool is “guaranteed” to be present in Linux, OS X and newer versions of Windows. If you have some older Windows (such as Windows XP), a zip tool may or may not be present. If it is not, you may have to install it first before being able to run the web-based version of this tool.
+
+Version 3.0.1 of this tool is not compatible with the flowCore 1.46.0 and newer package. This has been resolved in version 3.0.2.
 
 ### Path to the Tool
 
