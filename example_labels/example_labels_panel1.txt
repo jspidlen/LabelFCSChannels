@@ -1,0 +1,17 @@
+Parameter	Label	Name
+Time		
+FSC-A		
+FSC-H		
+FSC-W		
+SSC-A		
+SSC-H		
+SSC-W		
+FITC-A	CD4 FITC	B530-A
+PE-A	CD44 PE-A	B585-A
+PE-CF594-A	CD8a PE-CF594-A	B616-A
+PE-Cy7-A	CD25 PE-Cy7-A	B780-A
+APC-A	CD161 APC-A	R660-A
+APC-Cy7-A	CD62L APC-Cy7-A	R780-A
+Pacific Blue-A	CD5 Pacific Blue (BV421)-A	V450-A
+AmCyan-A	TCRd/Sytox Blue AmCyan-A	V510-A
+
